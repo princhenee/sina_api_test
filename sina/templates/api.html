@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Sina Test </title>
+</head>
+
+<body>
+{% for s in usertimeline.statuses %}
+<dl>
+    <dt>{{ s.user.screen_name }}</dt>
+    <dd>{{ s.text }}</dd>
+</dl>
+{% endfor %}
+</body>
+
+</html
